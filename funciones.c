@@ -35,6 +35,8 @@ float division (int opC1,int opC2)
 int factor (int opC1)
 {
     int resp;
+    if (opC1==0)
+        return 1;
     if (opC1==1)
         return 1;
     resp=opC1* factor(opC1-1);
@@ -65,3 +67,4 @@ int opci(void){
     }
     return opc;
 }
+
