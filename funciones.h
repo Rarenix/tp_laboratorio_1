@@ -2,8 +2,6 @@
 #define FUNCIONES_H_INCLUDED
 #include <stdio.h>
 #include <stdlib.h>
-//incluyo la biblioteca adicional propia funciones.h
-#include "funciones.h"
 /** \brief suma : recibe 2 numeros y devuelve un  entero
  *
  * \param se carga el primer numero ingresado
@@ -12,7 +10,8 @@
  *
  */
 
-int sumar(int,int);
+float sumar(float,float);
+
 /** \brief resta : recibe 2 numeros y devuelve un  entero
  *
  * \param se carga un primer numero ingresado
@@ -21,7 +20,8 @@ int sumar(int,int);
  *
  */
 
-int restar(int,int);
+float restar(float,float);
+
 /** \brief multiplicacion : recibe 2 numero y devuelve un entero
  *
  * \param se carga el primer numero ingresado
@@ -30,7 +30,8 @@ int restar(int,int);
  *
  */
 
-int multiplicacion(int,int);
+float multiplicacion(float,float);
+
 /** \brief division :recibe 2 numero y devuelvo un flotante(decimal)
  *
  * \param se carga el primer numero
@@ -39,18 +40,28 @@ int multiplicacion(int,int);
  *
  */
 
-float division(int,int);
+float division(float,float);
 /** \brief factorial : recibo el primer numero o el segundo y devuelvo su factorial
  *
  * \param ingreso primer numero
  * \param ingreso segundo numero
  * \return devuelvo el factorial del primer numero y del segundo al main
+ */
+
+int factor(float);
+/** \brief operador : recibe los numero ingresados a ser operados y los muestra en pantalla
+ *
+ * \param
+ * \param
+ * \return
  *
  */
 
-int factor(int);
-
-int operador(void);
+float operador(void);
+/** \brief opci : recibe un numero del menu si no es una de las opcines vuelve a pedir una opcion
+ * \param opc tiene el valor a ser comparado en el while
+ * \return retorna un valor numerico
+ */
 
 int opci(void);
 
